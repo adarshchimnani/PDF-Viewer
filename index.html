@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple PDF Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Simple PDF Viewer</h1>
+  <div id="pdf-container"></div>
+  <div id="page-controls">
+    <button id="prev-page">Previous</button>
+    <span id="page-num">Page 1</span>
+    <button id="next-page">Next</button>
+    <input type="number" id="go-to-page-input" placeholder="Go to Page">
+    <button id="go-to-page-btn">Go</button>
+  </div>
+  <div>
+    <button id="zoom-out">Zoom Out</button>
+    <button id="zoom-in">Zoom In</button>
+  </div>
+  <input type="file" id="file-input" accept=".pdf">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+  <script src="viewer.js"></script>
+</body>
+</html>
+
